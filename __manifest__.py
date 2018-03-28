@@ -18,6 +18,7 @@ MRP Product Use Case
     ],
     'data': [
         'security/ir.model.access.csv',
+        'views/product_views.xml',
         'wizard/mrp_product_use_case_wizard.xml',
     ],
     'update_xml': [],
