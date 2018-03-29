@@ -27,5 +27,22 @@
                 </div>
             </field>
         </record>
+
+
+
+        <record id="product_product_use_case_action_server" model="ir.actions.server">
+             <field name="name">Use Case</field>
+            <field name="model_id" ref="model_product_product"/>
+            <field name="code">records.use_case_action()</field>
+        </record>
+        <record id="product_product_use_case_ir_value" model="ir.values">
+            <field eval="'client_action_multi'" name="key2"/>
+            <field eval="'product.product'" name="model"/>
+            <field name="name">Use Case</field>
+            <field eval="'ir.actions.server,%d'%product_product_use_case_action_server" name="value"/>
+        </record>
+
+
+
     </data>
 </odoo>
